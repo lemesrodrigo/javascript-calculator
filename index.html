@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+</head>
+
+<body>
+    <div class="wrapper bg-lavender-smoke">
+        <div id="calc" class="calculator">
+            <div class="visor">
+                <div id="accumulator" class="accumulator">0</div>
+                <div id="total" class="total">0</div>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-light-orange" title="Dark Mode"><i
+                        class="far fa-moon"></i></button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button class="btn">π</button>
+                <button class="btn">√</button>
+                <button class="btn">%</button>
+                <button class="btn">0⁰</button>
+                <button class="btn btn-red">C</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button onclick="changeAcc('/')" class="btn btn-orange">/</button>
+                <button onclick="insertNumber(7)" class="btn">7</button>
+                <button onclick="insertNumber(8)" class="btn">8</button>
+                <button onclick="insertNumber(9)" class="btn">9</button>
+                <button onclick="changeAcc('x')" class="btn btn-orange">x</button>
+                <button onclick="insertNumber(4)" class="btn">4</button>
+                <button onclick="insertNumber(5)" class="btn">5</button>
+                <button onclick="insertNumber(6)" class="btn">6</button>
+                <button onclick="changeAcc('-')" class="btn btn-orange">-</button>
+                <button onclick="insertNumber(1)" class="btn">1</button>
+                <button onclick="insertNumber(2)" class="btn">2</button>
+                <button onclick="insertNumber(3)" class="btn">3</button>
+                <button onclick="changeAcc('+')" class="btn btn-orange">+</button>
+                <button onclick="insertNumber(0)" class="btn" id="zero">0</button>
+                <button class="btn">+/-</button>
+                <button onclick="insertComma()" class="btn">.</button>
+                <button onclick="result()" class="btn btn-green">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
