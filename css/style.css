@@ -39,7 +39,7 @@ html, body, .wrapper {
     height: 475px;
 }
 
-.visor {
+.display {
     position: relative;
     margin-top: 50px;
     padding: 0 15px;
@@ -52,6 +52,14 @@ html, body, .wrapper {
     font-size: 0.8rem;
 }
 
+.accumulator #op {
+    color: #ee9213;
+}
+
+#op, #ac {
+    display: inline;
+}
+
 .total {
     font-weight: 700;
     margin-top: 5px;
@@ -62,24 +70,34 @@ html, body, .wrapper {
 .buttons {
     display: grid;
     grid-template-columns: 40px 40px 40px 40px;
-    grid-template-rows: 31px 18px 31px 31px 31px 31px 31px;
+    grid-template-rows: 31px 20px 31px 31px 31px 31px 31px;
     gap: 10px;
+}
+
+.span-col-2 {
+    grid-column: span 2;
 }
 
 .btn {
     border-radius: 17px;
+    text-align: center;
     height: 100%;
     width: 100%;
-    font-weight: 700;
+    font-size: 1rem;
     cursor: pointer;
     outline: none;
+    transition: linear .4s;
+}
+
+.btn:hover {
+    opacity: .5;
 }
 
 .btn-orange, .btn-green {
     color: #fff;
 }
 
-.btn-red {
+.btn-pink {
     background-color: #ffe0ecb0;
     color: rgb(255, 0, 149);
 }
