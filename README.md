@@ -1,5 +1,5 @@
 # Pure HTML, CSS, JavaScript Calculator
-Functions:
+Features:
  - plus, times, divide, minus.
  - exponentiation.
  - percentage.
